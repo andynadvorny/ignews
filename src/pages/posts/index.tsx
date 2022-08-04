@@ -29,7 +29,7 @@ export default function Posts({posts} :PostProps){
           {posts.map(post => (
             // eslint-disable-next-line react/jsx-key
             <Link href={`/posts/preview/${post.slug}`}>
-            <a key={post.slug} href="#">
+            <a key={post.slug}>
               <time>{post.updatedAt}</time>
               <strong>{post.title}</strong>
               <p>
